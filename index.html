@@ -6,16 +6,20 @@
   <title>Merge Harvest Unblocked</title>
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
+  <link rel="canonical" href="https://ubg44.github.io/MergeHarvest/" />
   <style>
     body {
        overflow:hidden;
       margin:0;
-      padding:0; 
+      padding:0;
       background: #231f20;
     }
   </style>
 </head>
 <body>
+  <script>
+    window.location= "https://ubg44.github.io/MergeHarvest/";
+  </script>
 <div id="unity-container" class="unity-desktop">
   <canvas id="unity-canvas" width=1000 height=600></canvas>
   <div id="unity-loading-bar">
@@ -90,20 +94,20 @@
 
   if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
     // Mobile device style: fill the whole browser client area with the game canvas:
-  
+
     var meta = document.createElement('meta');
     meta.name = 'viewport';
     meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
     document.getElementsByTagName('head')[0].appendChild(meta);
     container.className = "unity-mobile";
-  
+
     // To lower canvas resolution on mobile devices to gain some
     // performance, uncomment the following line:
     // config.devicePixelRatio = 1;
-  
+
     canvas.style.width = window.innerWidth + 'px';
     canvas.style.height = window.innerHeight + 'px';
-  
+
   //  unityShowBanner('WebGL builds are not supported on mobile devices.');
   } else {
     // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
@@ -132,7 +136,7 @@
   document.body.appendChild(script);
 </script>
 <script type="text/javascript">
-  
+
   function copyToClipboard(txt){
     Clipboard.copy(txt);
   }
@@ -181,8 +185,8 @@
     return {
       copy: copy
     };
-  })(window, document, navigator);  
-  
+  })(window, document, navigator);
+
 </script>
 <script src="js/analytics_ubg_v1_4.js"></script>
 <script src="js/ubg235_client_v1_1.js"></script>
